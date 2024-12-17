@@ -113,8 +113,8 @@ var promises = [
         County.set(d.CensusId,d.County);
     }),
   d3.csv("county_detail.csv", function(d) {
-        TotalPop.set(d.CensusId,d.TotalPop); 
-        IncomePerCap.set(d.CensusId,d.IncomePerCap);
+        TotalPop.set(d.CensusId,d.DMcoverage); 
+        IncomePerCap.set(d.CensusId,d.Households);
     })
 ]
 
